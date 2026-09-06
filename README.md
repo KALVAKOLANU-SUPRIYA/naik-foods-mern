@@ -121,3 +121,22 @@ Each product displays:
                      |
                      v
               MongoDB Atlas
+
+
+## Screenshots
+
+### Smart Product Discovery
+
+![Smart Product Discovery](screenshots/MainPage.png)
+
+### Product Search
+
+![Product Search](screenshots/Search.png)
+
+### Filtering and Sorting
+
+![Filtering and Sorting](screenshots/filters.png)
+
+### Shopping Cart and  Free Delivery Progress
+
+![Shopping Cart](screenshots/cart and free delivery.png)
