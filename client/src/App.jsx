@@ -12,7 +12,7 @@ import besanLadoo from "./assets/besan-ladoo.png";
 import kajuKatli from "./assets/kaju-katli.png";
 import maharashtrianMasala from "./assets/maharashtrian-masala.png";
 
-const API_URL = "http://localhost:5000/api/products";
+const API_URL = `${import.meta.env.VITE_API_URL}/api/products`;
 const FREE_DELIVERY_LIMIT = 999;
 
 function App() {
