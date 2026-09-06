@@ -1,82 +1,123 @@
-# Naik Foods - Smart Product Discovery
+# Naik Foods – Smart Product Discovery
 
 A MERN stack prototype developed as part of the Naik Foods Full Stack MERN Internship Assignment.
 
-## Project Overview
+The project focuses on improving the product discovery experience of the Naik Foods e-commerce website by introducing search, category filtering, price filtering, sorting, responsive product cards, and a shopping cart with free-delivery progress tracking.
 
-The project focuses on improving product discovery and shopping experience for an e-commerce food platform.
+## Live Demo
 
-The prototype provides:
+**Frontend:** https://naik-foods-mern.vercel.app/
 
-- Product search
-- Category filtering
-- Price filtering
-- Product sorting
-- Product ratings
-- Product images
-- Shopping cart
-- Quantity management
-- Remove from cart
-- Free-delivery progress indicator
-- Loading and error handling
+**Backend API:** https://naik-foods-api.onrender.com/
 
-## Technologies Used
+## GitHub Repository
 
-### Frontend
-- React
-- Vite
-- JavaScript
-- CSS
+The complete source code is available in this repository.
 
-### Backend
-- Node.js
-- Express.js
+## Project Objective
 
-### Database
-- MongoDB Atlas
+The existing Naik Foods website provides a wide range of food products across multiple categories. The prototype focuses on making product discovery easier and improving the overall shopping experience.
 
-## Architecture
+The main goals were:
 
-React Frontend  
-↓  
-Express REST API  
-↓  
-MongoDB Atlas
+- Make products easier to discover
+- Provide faster product search
+- Allow users to filter products by category
+- Allow users to filter products by price
+- Provide product sorting
+- Improve product presentation
+- Provide a simple shopping cart experience
+- Encourage customers to increase their cart value using a free-delivery progress indicator
 
-## Main API
-
-GET `/api/products`
-
-Supported query parameters:
-
-- `search`
-- `category`
-- `maxPrice`
-- `sort`
-
-Example:
-
-`/api/products?search=khakhra`
-
-## Features
+## Key Features
 
 ### Smart Product Discovery
 
-Users can search and filter products based on their requirements.
+- Product search by name
+- Category filtering
+- Maximum price filtering
+- Sorting by:
+  - Recommended
+  - Price: Low to High
+  - Price: High to Low
+  - Rating
+
+### Product Cards
+
+Each product displays:
+
+- Product image
+- Product name
+- Category
+- Description
+- Rating
+- Price
+- Add to Cart button
 
 ### Shopping Cart
 
-Users can add products, increase or decrease quantity, remove products, and view the subtotal.
+- Add products to cart
+- Increase/decrease quantity
+- Remove products
+- Automatic subtotal calculation
+- Cart item count
+- Free-delivery progress indicator
+- Order summary
 
-### Free Delivery Indicator
+### User Experience
 
-The cart displays progress toward the ₹999 free-delivery threshold.
+- Responsive interface
+- Loading state
+- Error state
+- Retry functionality
+- Empty search-result state
+- Product image hover effects
+- Responsive cart layout
 
-## Project Structure
+## Technology Stack
+
+### Frontend
+
+- React.js
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+
+### Backend
+
+- Node.js
+- Express.js
+- REST API
+
+### Database
+
+- MongoDB
+- MongoDB Atlas
+- Mongoose
+
+### Deployment
+
+- Vercel – Frontend
+- Render – Backend
+- MongoDB Atlas – Database
+
+## System Architecture
 
 ```text
-naik-foods-project/
-├── client/
-├── server/
-├── .gitignore
-└── README.md
+                    User
+                     |
+                     v
+              React + Vite
+                (Vercel)
+                     |
+                     | REST API
+                     v
+              Node.js + Express
+                 (Render)
+                     |
+                     v
+                Mongoose
+                     |
+                     v
+              MongoDB Atlas
